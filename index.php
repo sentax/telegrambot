@@ -38,6 +38,7 @@ $kyb1 = array(
 	2 =>  
     array ( 
       0 => 'تولید محتوا', 
+      1 => 'بازگشت', 
     ), 
   ), 
   'resize_keyboard'=>true 
@@ -48,6 +49,8 @@ $tg->sendPhoto("violamode.com","http://rayanbartar.com/uploads/portfolio/small/v
 $tg->sendPhoto("arkshoe.com","http://rayanbartar.com/uploads/portfolio/small/arkshoe-2.jpg",$chatid);
 }else if($msg=="درباره ما"){
 	$tg->sendMessage($chatid,"شرکت طراحی و بهینه سازی سایت (سئو) رایان برتر با سال‌ها تجربه در زمینه تجارت الکترونیک، افزایش ترافیک سایت، تبلیغات در گوگل، طراحی پرتال، طراحی وب سایت، پانل پیام کوتاه (پنل اس ام اس تحت وب) طراحی و پیاده سازی ایده های مشتریان در بستر اینترنت همچنان از پیشگامان این عرصه می‌باشد.","&reply_markup=".json_encode($kyb));
+}else if($msg=="بازگشت"){
+	$tg->sendMessage($chatid,"منوی اصلی","&reply_markup=".json_encode($kyb));
 }else if($msg=="اطلاعات تماس"){
 	$tg->sendMessage($chatid,"تبریز چهارراه شریعتی (شهناز) کوچه ارک بازار موبایل تبریز طبقه 2 واحد 203 ","&reply_markup=".json_encode($kyb));
 }else if($msg=="خدمات"){
