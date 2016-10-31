@@ -2,8 +2,8 @@
 include('TLG.php');
 $update = json_decode(file_get_contents('php://input'));
 $tg=new Telegram('283971445:AAGrn2U-_27P-6ABvVVAVXI_zsnMJ1PSadA');
-
-
+$chatid=$update->message->chat->id;
+$msg=$update->message->text;
 $kyb = array( 
    'keyboard' =>  
   array ( 
@@ -21,7 +21,11 @@ $kyb = array(
   'resize_keyboard'=>true 
 ); 
 
-$tg->sendMessage($update->message->chat->id,$update->message->text,"&reply_markup=".json_encode($kyb));
+
+if($msg=="نمونه کارها")
+sendPhoto("violamode.com","http://rayanbartar.com/uploads/portfolio/small/viola-port-2.jpg",$chatid);
+else
+$tg->sendMessage($chatid,$msg,"&reply_markup=".json_encode($kyb));
 
 
 

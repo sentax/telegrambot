@@ -27,12 +27,12 @@ class Telegram {
 
     } 
 
-    function sendPhoto($inpCaption,$inpUrl)
+    function sendPhoto($inpCaption,$inpUrl,$chatId)
     { 
         $content = file_get_contents($inpUrl);
         file_put_contents("tmp6o8.jpg", $content);
         $bot_url    = "https://api.telegram.org/bot".$this->token."/";
-        $url        = $bot_url . "sendPhoto?chat_id=@music6o8&parse_mode=HTML" ;
+        $url        = $bot_url . "sendPhoto?chat_id=".$chatId."&parse_mode=HTML" ;
         $post_fields = array('caption'   => $inpCaption,'photo'     => new CURLFile(realpath("tmp6o8.jpg")));
         $ch = curl_init(); 
         curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type:multipart/form-data"));
