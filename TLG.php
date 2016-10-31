@@ -15,7 +15,7 @@ class Telegram {
     function sendMessage($message="err")
     { 
         
-        $user_id = 'imsentax';
+        $user_id = '@imsentax';
         $url = 'https://api.telegram.org/bot'.$this->token.'/sendMessage?chat_id='.$user_id;
         $url .= '&text=' .$message."&parse_mode=HTML";
     
