@@ -9,18 +9,13 @@ $kyb = array(
   array ( 
     0 =>  
     array ( 
-      0 => 'Row 1->Column 1', 
-      1 => 'Row 1->Column 2', 
+      0 => 'خدمات', 
+      1 => 'نمونه کارها', 
     ), 
     1 =>  
     array ( 
-      0 => 'Row 2->Column 1', 
-      1 => 'Row 2->Column 2', 
-    ), 
-    2 =>  
-    array ( 
-      0 => 'Row 3->Column 1', 
-      1 => 'Row 3->Column 2', 
+      0 => 'اطلاعات تماس', 
+      1 => 'درباره ما', 
     ), 
   ), 
   'resize_keyboard'=>true 
