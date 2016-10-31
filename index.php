@@ -27,7 +27,7 @@ $kyb1 = array(
   array ( 
     0 =>  
     array ( 
-      0 => 'طراحی سایت', 
+      0 => '[text](http://www.example.com/)', 
       1 => 'بهینه سازی', 
     ), 
     1 =>  
