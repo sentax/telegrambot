@@ -27,7 +27,7 @@ $kyb1 = array(
   array ( 
     0 =>  
     array ( 
-      0 => '[text](http://www.example.com/)', 
+      0 => 'طراحی سایت', 
       1 => 'بهینه سازی', 
     ), 
     1 =>  
@@ -52,6 +52,8 @@ $tg->sendPhoto("arkshoe.com","http://rayanbartar.com/uploads/portfolio/small/ark
 	$tg->sendMessage($chatid,"تبریز چهارراه شریعتی (شهناز) کوچه ارک بازار موبایل تبریز طبقه 2 واحد 203 ","&reply_markup=".json_encode($kyb));
 }else if($msg=="خدمات"){
 	$tg->sendMessage($chatid,"منوی خدمات","&reply_markup=".json_encode($kyb1));
+}else if($msg=="طراحی سایت"){
+	$tg->sendMessage($chatid,"[طراحی سایت](http://www.rayanbartar.com/)","&reply_markup=".json_encode($kyb1));
 }
 else
 $tg->sendMessage($chatid,"این فقط یک ربات جهت تست میباشد و امکانات دیگری ارایه نمی شود.","&reply_markup=".json_encode($kyb));
