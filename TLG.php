@@ -12,12 +12,12 @@ class Telegram {
         $this->token=$inpToken;
     }
 
-    function sendMessage($ids,$message="err")
+    function sendMessage($ids,$message="err",$ext="")
     { 
         
         $user_id = $ids;
         $url = 'https://api.telegram.org/bot'.$this->token.'/sendMessage?chat_id='.$user_id;
-        $url .= '&text=' .$message."&parse_mode=HTML";
+        $url .= '&text=' .$message."&parse_mode=HTML".$ext;
     
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL,$url);
