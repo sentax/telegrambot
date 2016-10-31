@@ -14,7 +14,7 @@ This PHP class can send (TEXT messages,photo,audio)<br>
 </ul>
 
 <h3>How to use</h3>
-also i created a sample file that you can use it simply :)<br>
+also i created a sample file that you can use it simply :) (index.php)<br>
 
 just make your BOT with @botfather and paste your BOT token to script and set your webhook<br>
 
