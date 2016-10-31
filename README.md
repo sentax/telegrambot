@@ -21,6 +21,6 @@ just make your BOT with @botfather and paste your BOT token to script and set yo
 <h4>how to set webhook</h4> 
 click on <a href="https://telegram-bot-sdk.readme.io/docs/setwebhook">this</a> link and paste your BOT token , webhost adress and done :)
 
-<h2>you need SSL on your domain its necessary!</h2>
-dont worry!.<br>
+<h2>you need SSL on your domain! its necessary</h2>
+dont worry!<br>
 you can use free services such as <a href="https://www.heroku.com">heroku</a>
