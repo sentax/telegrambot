@@ -6,6 +6,7 @@
 //$tg->sendMessage('hiiii');
 
 $token='283971445:AAGrn2U-_27P-6ABvVVAVXI_zsnMJ1PSadA';
+$message='im okokokkok';
 $user_id = '@imsentax';
         $url = 'https://api.telegram.org/bot'.$token.'/sendMessage?chat_id='.$user_id;
         $url .= '&text=' .$message."&parse_mode=HTML";
