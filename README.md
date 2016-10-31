@@ -1,4 +1,3 @@
-"# telegrambot" <br>
 Developed By : S3NTAX - sentax.ir<br>
 Email : Romidian70@gmail.com<br>
 Feel free to use this script :)<br>
