@@ -26,7 +26,7 @@ $kyb = array(
   'resize_keyboard'=>true 
 ); 
 
-$tg->sendMessage($update->message->chat->id,$update->message->text,"&reply_markup=".$kyb);
+$tg->sendMessage($update->message->chat->id,$update->message->text,"&reply_markup=".json_encode($kyb));
 
 
 
