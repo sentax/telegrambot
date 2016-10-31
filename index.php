@@ -23,7 +23,7 @@ $kyb = array(
 
 
 if($msg=="نمونه کارها")
-sendPhoto("violamode.com","http://rayanbartar.com/uploads/portfolio/small/viola-port-2.jpg",$chatid);
+sendPhoto("violamode.com","img/viola.jpg",$chatid);
 else
 $tg->sendMessage($chatid,$msg,"&reply_markup=".json_encode($kyb));
 
