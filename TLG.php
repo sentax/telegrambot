@@ -30,7 +30,7 @@ class Telegram {
     function sendPhoto($inpCaption,$inpUrl,$chatId)
     { 
         $content = file_get_contents($inpUrl);
-        file_put_contents("tmp6o8.jpg", $content);
+        file_put_contents("tmp.jpg", $content);
         $bot_url    = "https://api.telegram.org/bot".$this->token."/";
         $url        = $bot_url . "sendPhoto?chat_id=".$chatId."&parse_mode=HTML" ;
         $post_fields = array('caption'   => $inpCaption,'photo'     => new CURLFile(realpath("tmp6o8.jpg")));
@@ -47,11 +47,11 @@ class Telegram {
     { 
        
         $content = file_get_contents($inpUrl);
-        file_put_contents("tmp6o8.mp3", $content);
+        file_put_contents("tmp.mp3", $content);
         $bot_url    = "https://api.telegram.org/bot".$this->token."/";
         $url        = $bot_url . "SendAudio?chat_id=@music6o8" ;
-        $cfile = new CURLFile(realpath('Test.mp3'),'audio/mpeg3','tmp6o8.mp3');
-        $post_fields = array('caption'   => $inpCaption,'audio'     => new CURLFile(realpath("tmp6o8.mp3")));
+        $cfile = new CURLFile(realpath('Test.mp3'),'audio/mpeg3','tmp.mp3');
+        $post_fields = array('caption'   => $inpCaption,'audio'     => new CURLFile(realpath("tmp.mp3")));
         $ch = curl_init(); 
         curl_setopt($ch, CURLOPT_HTTPHEADER, array("Content-Type:multipart/form-data"));
         curl_setopt($ch, CURLOPT_URL, $url); 
